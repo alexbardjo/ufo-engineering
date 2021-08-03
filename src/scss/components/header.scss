@@ -1,0 +1,81 @@
+@import '../variables';
+
+.header {
+  background-color: #7b8c8a67;
+  height: 300px;
+
+  &__top {
+    padding: 30px;
+    height: 200px;
+    text-align: center;
+  }
+
+  &__title {
+    color: $gray-line;
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+
+  input::-webkit-input-placeholder { color: #7b8c8af3; }
+}
+.searchBlock {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  padding: 0 50px;
+  width: 100%;
+
+  &__input {
+    width: 500px;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 0 10px 10px;
+    border: 1px solid $gray-line;
+    background: $gray-line;
+    border-radius: 8px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+  }
+
+  .clear {
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.15s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.homePageBtn {
+  background-color: #7b8c8ae6;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px 20px;
+  color: $gray-line;
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+

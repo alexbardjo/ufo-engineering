@@ -1,0 +1,128 @@
+@import '../variables';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid $gray-line;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &__tags {
+    margin-top: 20px;
+    width: 100%;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+
+  &__img {
+    height: 160px;
+    object-fit: cover;
+  }
+
+
+  .info {
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    background-color: $grey;
+
+
+    &__newTag {
+      display: none;
+      position: relative;
+      margin: 0 5px;
+    }
+
+    &__statistic, &__tags {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    &__input {
+      border: 1px solid #f6f6f6;
+      background: #7b8c8a67;
+      border-radius: 8px;
+      height: 30px;
+      padding: 10px;
+      width: 100%;
+
+      &-img {
+        //display: none;
+        position: absolute;
+        width: 20px;
+        right: 6px;
+        top: 5px;
+        cursor: pointer;
+      }
+    }
+
+    .visible {
+      display: block;
+    }
+
+    &__list {
+      margin: 5px 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      justify-content: center;
+      gap: 10px;
+
+      &-block {
+        position: relative;
+
+        img {
+          display: none;
+          position: absolute;
+          top: -10px;
+          width: 15px;
+          right: 0;
+          cursor: pointer;
+        }
+
+        .remove {
+          display: block;
+        }
+
+        .hideBtn {
+          display: none;
+        }
+      }
+
+      &-item {
+        position: relative;
+        padding: 5px 5px;
+        background-color: #0c75edf5;
+        color: $gray-line;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  &__separator {
+    border-bottom: 1px solid $gray-line;
+    margin-top: 15px;
+  }
+}
+
+.change {
+  background-color: rgb(255, 255, 255, 0.5);
+  cursor: default;
+}
+
+.unvisible {
+  display: none;
+}
+
+
+
+
+
+

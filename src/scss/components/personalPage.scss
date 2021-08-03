@@ -1,0 +1,43 @@
+@import '../variables';
+
+.personal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  margin: 10px;
+
+  &__img {
+    width: 500px;
+      border-radius: 8px;
+    }
+
+  &__data {
+  }
+
+  &__list {
+    padding: 20px 15px;
+    background-color: #7b8c8ae6;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      padding: 5px 10px;
+      border: solid 1px #f3f3f3;
+      background-color: rgba(118, 181, 174, 0.5);
+      color: $gray-line;
+      border-radius: 8px;
+
+
+
+      b {
+        margin-right: 10px;
+      }
+    }
+
+    &-item:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
